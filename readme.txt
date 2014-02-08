@@ -4,7 +4,7 @@ Donate link: http://www.mentebinaria.com/
 Tags: piwik, analytics, tracking, code
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: trunk
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -46,14 +46,13 @@ If you're keen on thanking me personally, you can visit [my page](http://www.men
 
 == Screenshots ==
 
-1. **The main settings page.**
-It uses the same look as the native pages. Everything is as simple as possible and all options have a small description to aid the user.
+1. **The main settings page.** *It uses the same look as the native pages. Everything is as simple as possible and all options have a small description to aid the user.*
 
 == Changelog ==
 
 = 1.0.2 =
 * Improved readme.txt.
-* Added banner.
+* Added banners.
 
 = 1.0.1 =
 * Improved the code structure.
