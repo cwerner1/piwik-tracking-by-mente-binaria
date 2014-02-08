@@ -24,11 +24,6 @@ This section describes how to install the plugin and get it working.
 2. Activate the plugin through the "Plugins" menu in WordPress.
 3. Visit the "Piwik tracking" page in the "Settings" section and adjust the parameters. Don't forget to click "Save Changes" when you're done.
 
-== Screenshots ==
-
-1. The main settings page. It uses the same look as the native pages.
-Everything is as simple as possible and all options have a small description to aid the user.
-
 == Frequently Asked Questions ==
 
 = Can i install this plugin on my commercial website? =
@@ -49,10 +44,15 @@ The reason why i'm giving you this plugin is because someone else worked to give
 Thanks! If you'd like to give something back, visit [this page](http://codex.wordpress.org/Contributing_to_WordPress) to see how you can contribute to WordPress.
 If you're keen on thanking me personally, you can visit [my page](http://www.mentebinaria.com/) to see how we can help each other.
 
+== Screenshots ==
+
+1. **The main settings page.** *It uses the same look as the native pages. Everything is as simple as possible and all options have a small description to aid the user.*
+
 == Changelog ==
 
 = 1.0.2 =
 * Improved readme.txt.
+* Added banners.
 
 = 1.0.1 =
 * Improved the code structure.
@@ -63,7 +63,7 @@ If you're keen on thanking me personally, you can visit [my page](http://www.men
 == Upgrade Notice ==
 
 = 1.0.2 =
-There were no changes, i only added some FAQs to the ReadMe file.
+There were no changes, i only improved the ReadMe file.
 
 = 1.0.1 =
 This version does basically the same as the previous one, i just did some minor improvements to the structure of the code.
