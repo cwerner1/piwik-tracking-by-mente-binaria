@@ -34,7 +34,7 @@ abstract class MB_PiwikTracking_ViewFrontendScript {
 			echo '(("https:" == document.location.protocol) ? "https" : "http") + "://' . $options['address'] . '/"; ';
 		}
 		else {
-			echo '"http://"' . $options['address'] . '/"; ';
+			echo '"http://' . $options['address'] . '/"; ';
 		}
 ?>_paq.push(["setTrackerUrl", u+"piwik.php"]); _paq.push(["setSiteId", "<?php echo $options['site_id']; ?>"]); var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript"; g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s); })();</script>
 <noscript><img src="<?php echo ( $options['ssl_compat'] ? 'https' : 'http' ) . '://' . $options['address']; ?>/piwik.php?idsite=<?php echo $options['site_id']; ?>&amp;rec=1" style="border:0" alt="" /></noscript>
