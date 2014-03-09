@@ -4,7 +4,7 @@ Donate link: http://www.mentebinaria.com/
 Tags: piwik, analytics, tracking, code
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -50,6 +50,9 @@ If you're keen on thanking me personally, you can visit [my page](http://www.men
 
 == Changelog ==
 
+= 1.0.4 =
+* Added option to log user names (thanks cwerner1111).
+
 = 1.0.3 =
 * Fixed bug in script output (thanks cwerner1111).
 
@@ -64,6 +67,9 @@ If you're keen on thanking me personally, you can visit [my page](http://www.men
 * Initial version.
 
 == Upgrade Notice ==
+
+= 1.0.4 =
+Support for logging user names was added.
 
 = 1.0.3 =
 This corrects a bug in the script output that might cause the tracking to malfunction. You should upgrade as soon as possible.

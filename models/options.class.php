@@ -31,7 +31,8 @@ abstract class MB_PiwikTracking_ModelOptions {
 			'enable' => false,
 			'address' => $_SERVER["SERVER_NAME"] . '/piwik',
 			'ssl_compat' => false,
-			'site_id' => 0
+			'site_id' => 0,
+			'log_usernames' => false
 			) , '', 'no' );
 		register_setting( 'MB_PiwikTracking', 'MB_PiwikTracking', array( 'MB_PiwikTracking_ControllerBackend', 'sanitize_options' ) );
 	}
@@ -104,6 +105,7 @@ abstract class MB_PiwikTracking_ModelOptions {
 			$new_options['site_id'] = $old_options['site_id'];
 			$errors[] = 'site_id';
 		}
+		static::sanitize_checkbox( $new_options['log_usernames'] );
 
 		return $errors;
 	}
@@ -170,5 +172,29 @@ abstract class MB_PiwikTracking_ModelOptions {
 			return false;
 		}
 		return true;
+	}
+
+	/**
+	 * Get extra data.
+	 *
+	 * Get any extra required data.
+	 *
+	 * @since 1.0.4
+	 *
+	 * @return array The data.
+	 */
+	public static function get_data() {
+		$data = array();
+		if ( static::get_option( 'log_usernames' ) ) {
+			if ( is_user_logged_in() ) {
+				$currentUser = wp_get_current_user();
+				$data['username'] = $currentUser->user_nicename;
+			}
+			// if user isn't logged in or something went wrong
+			if ( !isset( $data['username'] ) ) {
+				$data['username'] = '_unknown';
+			}
+		}
+		return $data;
 	}
 }

@@ -36,6 +36,7 @@ abstract class MB_PiwikTracking_ViewBackendSettings {
 		add_settings_field( 'MB_PiwikTracking-address', __( 'Address', 'MB_PiwikTracking' ), array( 'MB_PiwikTracking_ControllerBackend', 'output_settings_field' ), MB_PIWIKTRACKING_SLUG, 'general', array( 'label_for' => 'MB_PiwikTracking-address' ) );
 		add_settings_field( 'MB_PiwikTracking-ssl_compat', __( 'SSL compatibility', 'MB_PiwikTracking' ), array( 'MB_PiwikTracking_ControllerBackend', 'output_settings_field' ), MB_PIWIKTRACKING_SLUG, 'general', array( 'label_for' => 'MB_PiwikTracking-ssl_compat' ) );
 		add_settings_field( 'MB_PiwikTracking-site_id', __( 'Site Id', 'MB_PiwikTracking' ), array( 'MB_PiwikTracking_ControllerBackend', 'output_settings_field' ), MB_PIWIKTRACKING_SLUG, 'general', array( 'label_for' => 'MB_PiwikTracking-site_id') );
+		add_settings_field( 'MB_PiwikTracking-log_usernames', __( 'Log usernames', 'MB_PiwikTracking' ), array( 'MB_PiwikTracking_ControllerBackend', 'output_settings_field' ), MB_PIWIKTRACKING_SLUG, 'general', array( 'label_for' => 'MB_PiwikTracking-log_usernames' ) );
 	}
 
 	/**
@@ -110,6 +111,11 @@ abstract class MB_PiwikTracking_ViewBackendSettings {
 ?>
 <input id="MB_PiwikTracking-<?php echo $name; ?>" name="MB_PiwikTracking[<?php echo $name; ?>]" type="text" class="regular-text" value="<?php echo $value; ?>" />
 <p class="description"><?php _e( 'The id of this site on your Piwik install.', 'MB_PiwikTracking' ); ?></p>
+<?php
+			case 'log_usernames':
+?>
+<input id="MB_PiwikTracking-<?php echo $name; ?>" name="MB_PiwikTracking[<?php echo $name; ?>]" type="checkbox" value="1"<?php echo $value ? ' checked="checked"' : ''; ?> />
+<p class="description"><?php _e( 'Do you want Piwik to log the usernames of logged in users?', 'MB_PiwikTracking' ); ?></p>
 <?php
 				break;
 			default:
