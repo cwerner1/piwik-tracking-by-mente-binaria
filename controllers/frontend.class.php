@@ -53,7 +53,9 @@ abstract class MB_PiwikTracking_ControllerFrontend {
 		$options = MB_PiwikTracking_ModelOptions::get_options();
 		// If the plugin is enabled, display the code.
 		if ( $options['enable'] ) {
-			MB_PiwikTracking_ViewFrontendScript::output( $options );
+			// Get any extra required data.
+			$data = MB_PiwikTracking_ModelOptions::get_data();
+			MB_PiwikTracking_ViewFrontendScript::output( $options, $data );
 		}
 	}
 }
