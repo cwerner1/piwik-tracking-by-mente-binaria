@@ -32,8 +32,8 @@ abstract class MB_PiwikTracking_ViewFrontendScript {
 <script type="text/javascript">var _paq = _paq || []; <?php
 		$customVars = array();
 		if ( $options['log_usernames'] && isset( $data['username'] ) ) {
-			$customVars[1] = array( 'visitor', $data['username'] );
-			echo '_paq.push(["setCustomVariable",1,"visitor","' . $data['username'] . '","visit"]); ';
+			$customVars[1] = array( 'Visitor', $data['username'] );
+			echo '_paq.push(["setCustomVariable",1,"Visitor","' . $data['username'] . '","visit"]); ';
 		}
 ?>_paq.push(["trackPageView"]); _paq.push(["enableLinkTracking"]); (function() { var u =<?php
 		if ($options['ssl_compat']) {
