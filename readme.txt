@@ -3,8 +3,8 @@ Contributors: mentebinaria,cwerner1111
 Donate link: http://www.mentebinaria.com/
 Tags: piwik, analytics, tracking, code
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 1.0.4
+Tested up to: 3.9
+Stable tag: 1.0.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -49,6 +49,9 @@ If you're keen on thanking me personally, you can visit [my page](http://www.men
 1. **The main settings page.** *It uses the same look as the native pages. Everything is as simple as possible and all options have a small description to aid the user.*
 
 == Changelog ==
+
+= 1.0.5 =
+* Fixed minor bug in settings page.
 
 = 1.0.4 =
 * Added option to log user names (thanks cwerner1111).
