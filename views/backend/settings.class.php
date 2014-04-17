@@ -112,6 +112,7 @@ abstract class MB_PiwikTracking_ViewBackendSettings {
 <input id="MB_PiwikTracking-<?php echo $name; ?>" name="MB_PiwikTracking[<?php echo $name; ?>]" type="text" class="regular-text" value="<?php echo $value; ?>" />
 <p class="description"><?php _e( 'The id of this site on your Piwik install.', 'MB_PiwikTracking' ); ?></p>
 <?php
+				break;
 			case 'log_usernames':
 ?>
 <input id="MB_PiwikTracking-<?php echo $name; ?>" name="MB_PiwikTracking[<?php echo $name; ?>]" type="checkbox" value="1"<?php echo $value ? ' checked="checked"' : ''; ?> />
