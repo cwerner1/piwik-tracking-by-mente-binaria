@@ -143,12 +143,12 @@ abstract class MB_PiwikTracking_ModelOptions {
 		// discard port
 		//preg_replace( '{:[0-9]+/?}', '', $value, 1 );
 		// remove invalid characters
-		$value = preg_replace( '{[^a-zA-Z0-9\-_/.#?&%]*}', '', $value );
+		$value = preg_replace( '{[^a-zA-Z0-9\-_/.:#?&%]*}', '', $value );
 		// remove trailing slash
 		$value = preg_replace( '{/$}', '', $value );
 
 		// check length and format of address
-		if ( strlen( $value ) < 6 || !preg_match( '{^localhost|([a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+)(/[a-zA-Z0-9\-_.#?&%]*)*$}', $value ) ) {
+		if ( strlen( $value ) < 6 || !preg_match( '{^localhost|([a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+)(:[0-9]{1,5})?(/[a-zA-Z0-9\-_.#?&%]*)*$}', $value ) ) {
 			return false;
 		}
 		return true;

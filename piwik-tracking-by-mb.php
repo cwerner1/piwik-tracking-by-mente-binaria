@@ -6,8 +6,8 @@
 /*
 Plugin Name: Piwik tracking, by Mente Binaria
 Plugin URI: http://www.mentebinaria.com/
-Description: "Piwik tracking, by Mente Binaria" is a simple plugin whose only purpose is to add the Piwik tracking code to your website.
-Version: 1.0.4
+Description: Add the Piwik tracking code to your website.
+Version: 1.0.6
 Author: Mente Binaria
 Author URI: http://www.mentebinaria.com/
 License: GPLv3 or later
@@ -37,7 +37,7 @@ if ( !function_exists( 'add_action' ) ) {
 }
 
 // Set some constants required throughout the application.
-define( 'MB_PIWIKTRACKING_VERSION', '1.0.4' );
+define( 'MB_PIWIKTRACKING_VERSION', '1.0.5' );
 define( 'MB_PIWIKTRACKING_SLUG', 'piwik-tracking-by-mb' );
 define( 'MB_PIWIKTRACKING_PATH', realpath( dirname( __FILE__ ) ) );
 
