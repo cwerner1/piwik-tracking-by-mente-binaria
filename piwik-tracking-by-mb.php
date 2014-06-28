@@ -7,7 +7,7 @@
 Plugin Name: Piwik tracking, by Mente Binaria
 Plugin URI: http://www.mentebinaria.com/
 Description: Add the Piwik tracking code to your website.
-Version: 1.0.5
+Version: 1.0.6
 Author: Mente Binaria
 Author URI: http://www.mentebinaria.com/
 License: GPLv3 or later
